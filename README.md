@@ -16,7 +16,8 @@ You can compare the results with:
     image = imread('myimage.png',flatten=1)
     cv2.moments(image)
     
-For some reason, some of the central and normlized differ to OpenCV. Please let me know, if you find the error.
+For some reason, some of the central and normlized differ to OpenCV. Please let me know, if you find the error. 
+One have to check how OpenCV does the calculations in modules/imgproc/src/moments.cpp
 
 Further reading:
 - https://en.wikipedia.org/wiki/Image_moment
