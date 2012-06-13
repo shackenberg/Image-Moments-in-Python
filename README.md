@@ -15,6 +15,8 @@ You can compare the results with:
     from scipy.misc import imread
     image = imread('myimage.png',flatten=1)
     cv2.moments(image)
+    
+For some reason, some of the central and normlized differ to OpenCV. Please let me know, if you find the error.
 
 Further reading:
 - https://en.wikipedia.org/wiki/Image_moment
