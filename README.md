@@ -24,4 +24,4 @@ Further reading:
 - https://en.wikipedia.org/wiki/Central_moment
 - https://en.wikipedia.org/wiki/Moment_(mathematics)
 - https://en.wikipedia.org/wiki/Standardized_moment
-- http://opencv.willowgarage.com/documentation/cpp/structural_analysis_and_shape_descriptors.html#cv-moments
+- http://docs.opencv.org/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html#moments
