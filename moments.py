@@ -18,18 +18,18 @@ def moments2e(image):
 
   """
   assert len(image.shape) == 2 # only for grayscale images        
-  x, y = mgrid[:image.shape[0],:image.shape[1]]
+  y,x = mgrid[:image.shape[0],:image.shape[1]]
   moments = {}
   moments['mean_x'] = sum(x*image)/sum(image)
   moments['mean_y'] = sum(y*image)/sum(image)
           
   # raw or spatial moments
   moments['m00'] = sum(image)
-  moments['m01'] = sum(x*image)
-  moments['m10'] = sum(y*image)
+  moments['m01'] = sum(y*image)
+  moments['m10'] = sum(x*image)
   moments['m11'] = sum(y*x*image)
-  moments['m02'] = sum(x**2*image)
-  moments['m20'] = sum(y**2*image)
+  moments['m02'] = sum(y**2*image)
+  moments['m20'] = sum(x**2*image)
   moments['m12'] = sum(x*y**2*image)
   moments['m21'] = sum(x**2*y*image)
   moments['m03'] = sum(x**3*image)
